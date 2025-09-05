@@ -1,0 +1,6 @@
+Name,Tier,Base_URL,APIKey,Model(s),Timeout,Max_Requests_Per_Minute,Cost_Per_1K_Tokens,Priority,Other
+OpenAI,official,https://api.openai.com/v1,${OPENAI_API_KEY},gpt-3.5-turbo|gpt-4|gpt-4-turbo,30,3000,0.0020,1,Premium service with high rate limits
+Anthropic,official,https://api.anthropic.com/v1,${ANTHROPIC_API_KEY},claude-3-5-sonnet|claude-3-haiku,45,1000,0.0080,2,High quality responses with reasoning
+Cohere,community,https://api.cohere.ai/v1,${COHERE_API_KEY},command|command-light,30,500,0.0010,3,Good for text generation and embeddings
+Together,community,https://api.together.xyz/v1,${TOGETHER_API_KEY},meta-llama/Llama-2-7b-chat-hf|mistralai/Mixtral-8x7B-Instruct-v0.1,60,200,0.0002,4,Community models with good performance
+Local_Ollama,unofficial,http://localhost:11434,none,llama2|codellama|mistral,120,60,0.0000,5,Local deployment with full privacy
